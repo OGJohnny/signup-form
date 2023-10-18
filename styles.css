@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Young Serif', sans-serif;
+}
+
+@font-face {
+    font-family: Norse;
+    src: url('./fonts/Norse-Bold.otf');
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    width: auto;
+    background-color: rgb(245, 248, 248);
+}
+
+.left-image {
+    background-position: center center;
+    background-image: url("./images/halie-west-25xggax4bSA-unsplash.jpg");
+    background-size: cover;
+    flex: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    text-align: center;
+}
+
+.logo {
+    font-family: Norse;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25vh;
+    font-size: 6rem;
+}
+
+.logo > img {
+    height: 20vh;
+    padding: 10px;
+}
+
+.text-section {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 60vw;
+    height: 35%;
+}
+
+.description {
+    font-size: 1.25vw;
+    font-weight: 700;
+    min-height: 25vh;
+    max-width: 38vw;
+    padding-left: 5vw;
+    padding-top: 5vh;
+}
+
+form {
+    min-height: 35vh;
+}
+
+.form-container {
+    background-color: white;
+    padding-bottom: 3vh;
+    height: 65%;
+}
+
+h1 {
+    font-size: 2vw;
+    font-weight: 700;
+    padding-left: 1vw;
+    margin-top: 2.5vh;
+    margin-left: 4.5vw;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30vh;
+    padding-right: 5vw;
+    margin-left: 4.5vw;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+    width: 12vw;
+    height: 3vh;
+    font-size: 1.1vw;
+    padding-left: 0.8vw;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid blue;
+    box-shadow: 5px 5px 5px gray;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+#userPassword, #confirm {
+    border: 1px solid red;
+}
+
+#error {
+    position: absolute;
+    padding-top: 10vh;
+    font-size: 0.8vw;
+    color: red;
+}
+
+label {
+    font-size: 1vw;
+    font-weight: 600;
+    width: 20vw;
+}
+
+button {
+    background-color: #596D48;
+    border-radius: 5px;
+    height: 5vh;
+    width: 13vw;
+    font-size: 1vw;
+    color: white;
+    margin-left: 5vw;
+    margin-top: 4vh;
+    cursor: pointer;
+}
+.account {
+    margin-top: 3vh;
+    margin-left: 5vw;
+}
+
+a {
+    color: #596D48;
+    text-decoration: none;
+}
